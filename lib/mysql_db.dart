@@ -14,11 +14,12 @@ class MyDb {
       print("========== MYSQL CONNECTION ==========");
       print("Configured Host: $dbHost, Port: $dbPort, Database: $dbName");
 
-      final hostsToTry = {dbHost, "127.0.0.1", "10.0.2.2"}.toList();
+      final hostsToTry = [dbHost, "127.0.0.1", "10.0.2.2"].toSet().toList();
       final credentialsToTry = [
         {'user': dbUser, 'pass': dbPass},
-        {'user': 'scolarite', 'pass': 'scolarite'},
+        {'user': 'root', 'pass': 'root'},
         {'user': 'root', 'pass': ''},
+        {'user': 'scolarite', 'pass': 'scolarite'},
       ];
       Object? lastException;
 
