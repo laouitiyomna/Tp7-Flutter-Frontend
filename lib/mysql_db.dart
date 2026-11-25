@@ -19,7 +19,6 @@ class MyDb {
         {'user': dbUser, 'pass': dbPass},
         {'user': 'root', 'pass': 'root'},
         {'user': 'root', 'pass': ''},
-        {'user': 'scolarite', 'pass': 'scolarite'},
       ];
       Object? lastException;
 

@@ -6,5 +6,5 @@ const bool useMock = false;
 const String dbHost = "127.0.0.1";
 const int dbPort = 3306;
 const String dbUser = "root";
-const String dbPass = "";
+const String dbPass = "root";
 const String dbName = "scolarite_abs";
